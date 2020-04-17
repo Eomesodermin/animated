@@ -6,7 +6,7 @@ Installation
 ------------
 
 ``` r
-devtools::install_github("Eomesodermin/animated")
+devtools::install_github("Eomesodermin/animated", force = TRUE)
 ```
 
 Usage
@@ -17,19 +17,76 @@ library("animated")
 
 # See all palettes
 names(animated_palettes)
-#> [1] "A_Bugs_life" "Aladdin"
+#> [1] "A_Bugs_life"  "Aladdin"      "Finding_Nemo" "Inside_out"   "Lion_King"   
+#> [6] "Monsters_Inc" "Ratatouille"  "Up"
 ```
 
 Palettes
 --------
 
-### Aladdin
+### A\_Bugs\_life
 
 ``` r
 animated("A_Bugs_life")
 ```
 
+![](figure/A_Bugs_life-1.png)
+
+### Aladdin
+
+``` r
+animated("Aladdin")
+```
+
 ![](figure/Aladdin-1.png)
+
+### Finding\_Nemo
+
+``` r
+animated("Finding_Nemo")
+```
+
+![](figure/Finding_Nemo-1.png)
+
+### Inside\_out
+
+``` r
+animated("Inside_out")
+```
+
+![](figure/Inside_out-1.png)
+
+### Lion\_King
+
+``` r
+animated("Lion_King")
+```
+
+![](figure/Lion_King-1.png)
+
+### Monsters\_Inc
+
+``` r
+animated("Monsters_Inc")
+```
+
+![](figure/Monsters_Inc-1.png)
+
+### Ratatouille
+
+``` r
+animated("Ratatouille")
+```
+
+![](figure/Ratatouille-1.png)
+
+### Up
+
+``` r
+animated("Up")
+```
+
+![](figure/Up-1.png)
 
 ``` r
 library("ggplot2")
