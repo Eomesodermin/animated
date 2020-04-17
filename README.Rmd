@@ -24,7 +24,7 @@ knitr::opts_chunk$set(
 ## Installation
 
 ```r
-devtools::install_github("Eomesodermin/animated")
+devtools::install_github("Eomesodermin/animated", force = TRUE)
 ```
 
 ## Usage

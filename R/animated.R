@@ -26,7 +26,9 @@ animated_palettes <- list(
 #'   \href{https://palettegenerator.com/}{Palette Generator}.
 #'   If omitted, uses all colours.
 #' @param name Name of desired palette. Choices are:
-#'   \code{A_Bugs_life}, \code{Aladdin}
+#'   \code{A_Bugs_life}, \code{Aladdin}, \code{Finding_Nemo},
+#'   \code{Inside_out}, \code{Lion_King}, \code{Monsters_Inc},
+#'   \code{Ratatouille}, \code{Up}
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
 #'   @importFrom graphics rgb rect par image text
