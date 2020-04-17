@@ -41,3 +41,16 @@ names(animated_palettes)
 ```{r, Aladdin}
 animated("A_Bugs_life")
 ```
+
+
+```{r, ggplot1, fig.height = 3}
+library("ggplot2")
+ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
+  scale_fill_manual(values = animated("A_Bugs_life"))
+```
+
+```{r, volcano, fig.height = 3}
+pal <- animated("A_Bugs_life", 21, type = "continuous")
+image(volcano, col = pal)
+```
+
