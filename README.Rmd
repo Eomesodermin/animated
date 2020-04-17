@@ -31,7 +31,7 @@ devtools::install_github("Eomesodermin/animated")
 library("animated")
 
 # See all palettes
-names(animated)
+names(animated_palettes)
 ```
 
 ## Palettes
@@ -39,5 +39,5 @@ names(animated)
 ### Aladdin
 
 ```{r, Aladdin}
-animated("Aladdin")
+animated("A_Bugs_life")
 ```
