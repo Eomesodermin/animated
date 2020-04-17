@@ -3,9 +3,9 @@
 #' Use \code{\link{animated_palette}} to construct palettes of desired length.
 #'
 #' @export
-animated_palette <- list(
+animated_palettes <- list(
   A_Bugs_life = c("#545B3F", "#283036", "#34231C", "#6A6C4F", "#39454A", "#141B22", "#438F28", "#5B6876", "#7D7F63", "#7F8E99"),
-  Aladdin = c("#721B22", "#18104B", "#903C44", "#1F1C72", "#462563", "#480B15", "#654057", "#7E5679", "2F2C36#", "#AF6B5D"),
+  Aladdin = c("#721B22", "#18104B", "#903C44", "#1F1C72", "#462563", "#480B15", "#654057", "#7E5679", "2F2C36#", "#AF6B5D")
   
 )
 
@@ -28,19 +28,19 @@ animated_palette <- list(
 #' @export
 #' @keywords colors
 #' @examples
-#' animated_palette("A_Bugs_life")
-#' animated_palette("Aladdin")
-#' animated_palette("Aladdin", 3)
+#' animated("A_Bugs_life")
+#' animated("Aladdin")
+#' animated("Aladdin", 3)
 #'
 #' # If you need more colours than normally found in a palette, you
 #' # can use a continuous palette to interpolate between existing
 #' # colours
-#' pal <- animated_palette(21, name = "Aladdin", type = "continuous")
+#' pal <- animated(21, name = "Aladdin", type = "continuous")
 #' image(volcano, col = pal)
-animated_palette <- function(name, n, type = c("discrete", "continuous")) {
+animated <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
   
-  pal <- animated_palette[[name]]
+  pal <- animated_palettes[[name]]
   if (is.null(pal))
     stop("Palette not found.")
   
