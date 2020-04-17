@@ -1,0 +1,43 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "figure/",
+  fig.height = 1
+)
+```
+
+# Animated Palettes
+
+
+
+## Installation
+
+```r
+devtools::install_github("Eomesodermin/animated")
+```
+
+## Usage
+
+```{r, palettes_dummy}
+library("animated")
+
+# See all palettes
+names(animated)
+```
+
+## Palettes
+
+### Aladdin
+
+```{r, Aladdin}
+animated("Aladdin")
+```
