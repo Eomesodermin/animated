@@ -2,6 +2,8 @@
 output:
   md_document:
     variant: markdown_github
+editor_options: 
+  chunk_output_type: console
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -36,10 +38,54 @@ names(animated_palettes)
 
 ## Palettes
 
+### A_Bugs_life
+
+```{r, A_Bugs_life}
+animated("A_Bugs_life")
+```
+
+
 ### Aladdin
 
 ```{r, Aladdin}
-animated("A_Bugs_life")
+animated("Aladdin")
+```
+
+
+### Finding_Nemo
+
+```{r, Finding_Nemo}
+animated("Finding_Nemo")
+```
+
+### Inside_out
+
+```{r, Inside_out}
+animated("Inside_out")
+```
+
+### Lion_King
+
+```{r, Lion_King}
+animated("Lion_King")
+```
+
+### Monsters_Inc
+
+```{r, Monsters_Inc}
+animated("Monsters_Inc")
+```
+
+### Ratatouille
+
+```{r, Ratatouille}
+animated("Ratatouille")
+```
+
+### Up
+
+```{r, Up}
+animated("Up")
 ```
 
 
