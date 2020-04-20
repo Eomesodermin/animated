@@ -37,65 +37,29 @@ devtools::install_github("Eomesodermin/animated", force = TRUE)
 
 ## Usage
 
-```{r, palettes_dummy}
+```{r, Usage, eval=FALSE, echo=TRUE}
+# Load library
 library("animated")
 
-# See all palettes
+# List of all palettes currently available can be found using
 names(animated_palettes)
-for(i in 1:length(animated_palettes)){
-  print(animated(paste0(names(animated_palettes[i]))))
-}
+
+# To call a specific palette use 
+animated("Aladdin")
+
+# All current palettes are n = 10
+# to interpolate more colors for a specific palette use 
+animated("Aladdin", 21, type = "continuous")
 ```
 
 ## Palettes
 
-### A_Bugs_life
+```{r, all_palettes, echo=FALSE, eval = TRUE}
+library("animated")
 
-```{r, A_Bugs_life}
-animated("A_Bugs_life")
-```
+for(i in 1:length(animated_palettes)){
+  print(animated(paste0(names(animated_palettes[i]))))
+}
 
-
-### Aladdin
-
-```{r, Aladdin}
-animated("Aladdin")
-```
-
-
-### Finding_Nemo
-
-```{r, Finding_Nemo}
-animated("Finding_Nemo")
-```
-
-### Inside_out
-
-```{r, Inside_out}
-animated("Inside_out")
-```
-
-### Lion_King
-
-```{r, Lion_King}
-animated("Lion_King")
-```
-
-### Monsters_Inc
-
-```{r, Monsters_Inc}
-animated("Monsters_Inc")
-```
-
-### Ratatouille
-
-```{r, Ratatouille}
-animated("Ratatouille")
-```
-
-### Up
-
-```{r, Up}
-animated("Up")
 ```
 

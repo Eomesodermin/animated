@@ -32,82 +32,21 @@ Usage
 -----
 
 ``` r
+# Load library
 library("animated")
 
-# See all palettes
+# List of all palettes currently available can be found using
 names(animated_palettes)
-#> [1] "A_Bugs_life"  "Aladdin"      "Finding_Nemo" "Inside_out"   "Lion_King"   
-#> [6] "Monsters_Inc" "Ratatouille"  "Up"
-for(i in 1:length(animated_palettes)){
-  print(animated(paste0(names(animated_palettes[i]))))
-}
-```
 
-![](figure/palettes_dummy-1.png)![](figure/palettes_dummy-2.png)![](figure/palettes_dummy-3.png)![](figure/palettes_dummy-4.png)![](figure/palettes_dummy-5.png)![](figure/palettes_dummy-6.png)![](figure/palettes_dummy-7.png)![](figure/palettes_dummy-8.png)
+# To call a specific palette use 
+animated("Aladdin")
+
+# All current palettes are n = 10
+# to interpolate more colors for a specific palette use 
+animated("Aladdin", 21, type = "continuous")
+```
 
 Palettes
 --------
 
-### A\_Bugs\_life
-
-``` r
-animated("A_Bugs_life")
-```
-
-![](figure/A_Bugs_life-1.png)
-
-### Aladdin
-
-``` r
-animated("Aladdin")
-```
-
-![](figure/Aladdin-1.png)
-
-### Finding\_Nemo
-
-``` r
-animated("Finding_Nemo")
-```
-
-![](figure/Finding_Nemo-1.png)
-
-### Inside\_out
-
-``` r
-animated("Inside_out")
-```
-
-![](figure/Inside_out-1.png)
-
-### Lion\_King
-
-``` r
-animated("Lion_King")
-```
-
-![](figure/Lion_King-1.png)
-
-### Monsters\_Inc
-
-``` r
-animated("Monsters_Inc")
-```
-
-![](figure/Monsters_Inc-1.png)
-
-### Ratatouille
-
-``` r
-animated("Ratatouille")
-```
-
-![](figure/Ratatouille-1.png)
-
-### Up
-
-``` r
-animated("Up")
-```
-
-![](figure/Up-1.png)
+![](figure/all_palettes-1.png)![](figure/all_palettes-2.png)![](figure/all_palettes-3.png)![](figure/all_palettes-4.png)![](figure/all_palettes-5.png)![](figure/all_palettes-6.png)![](figure/all_palettes-7.png)![](figure/all_palettes-8.png)
