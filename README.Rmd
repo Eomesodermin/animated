@@ -50,6 +50,7 @@ animated("Aladdin")
 # All current palettes are n = 10
 # to interpolate more colors for a specific palette use 
 animated("Aladdin", 21, type = "continuous")
+
 ```
 
 ## Palettes
