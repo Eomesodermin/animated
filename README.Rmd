@@ -19,7 +19,15 @@ knitr::opts_chunk$set(
 
 # Animated Palettes
 
+Recycled code from [Karthik Ram's `wesanderson` palette](https://github.com/karthik/wesanderson)
+with inspiration from [DL Miller's `beyonce` palette](https://github.com/dill/beyonce)
 
+
+**Note**: Where as previously mentioned paletts used a different method for generating themed color palettes. I have opted for a different approach. I brief I used movie barcodes (in which every frame of a movie is shrunk to a couple pixel wide line), I then took the top 10 (using a k-means algorithm [palette generator](https://palettegenerator.com/)) most represented colors. 
+
+Using this approach I have generated color palettes that represent the most dominant colors of a given movie. 
+
+However, I am not sure I like the results all that much, I am working on implementing a better method for generating color palettes that better refects the artisticly dominant colors of a movie. So please check back at some point.
 
 ## Installation
 
@@ -34,6 +42,9 @@ library("animated")
 
 # See all palettes
 names(animated_palettes)
+for(i in 1:length(animated_palettes)){
+  print(animated(paste0(names(animated_palettes[i]))))
+}
 ```
 
 ## Palettes
@@ -86,17 +97,5 @@ animated("Ratatouille")
 
 ```{r, Up}
 animated("Up")
-```
-
-
-```{r, ggplot1, fig.height = 3}
-library("ggplot2")
-ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
-  scale_fill_manual(values = animated("A_Bugs_life"))
-```
-
-```{r, volcano, fig.height = 3}
-pal <- animated("A_Bugs_life", 21, type = "continuous")
-image(volcano, col = pal)
 ```
 
